@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="../stylesheets/advancedrps.css">
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+    <img src="../images/fist.png" alt="Rock" onclick="
+        move = 'Rock';
+       determine();
+       
+       if (message === 'the computer picked Rock' ){
+            result = ('its a tie');
+        }else if(message === 'the computer picked Scissors' ){
+            result = ('you win');
+        }else if(message === 'the computer picked Paper' ){
+            result = ('you lose');
+        }
+
+        endstats();
+        alert(`you picked ${move}, computer picked ${message} ${result} Wins: ${stats.wins} losses: ${stats.losses} ties: ${stats.ties} `)
+       
+    " class="Rock">
+
+    <img src="../images/raised_hand_with_fingers_splayed.png" alt="Paper" onclick="
+        move = 'Paper';
+           determine();
+       if (message === 'the computer picked Rock' ){
+           result = ('you win');
+        }else if(message === 'the computer picked Scissors' ){
+           result = ('you lose');
+        }else if(message === 'the computer picked Paper' ){
+            result = ('its a tie');
+        }
+        endstats();
+        alert(`you picked ${move}, computer picked ${message} ${result} Wins: ${stats.wins} losses: ${stats.losses} ties: ${stats.ties} `)
+    ">
+
+    <img src="../images/v.png" alt="Scissors" onclick="
+        move = 'Scissors'
+            determine();
+       if (message === 'the computer picked Rock' ){
+            result = ('you lose');
+        }else if(message === 'the computer picked Scissors' ){
+            result = ('its a tie');
+        }else if(message === 'the computer picked Paper' ){
+            result = ('you win');
+        }
+        endstats();
+        alert(`you picked ${move}, computer picked ${message} ${result} Wins: ${stats.wins} losses: ${stats.losses} ties: ${stats.ties} `)
+    ">
+    <p class="final-result"></p>
+    <p class="js-movedisplay"></p>
+    <p class="js-score"></p>
+   
+    <button class="reset-btn reset-btn-js">Reset</button>
+
+
+</body>
+<script src="../javascriptfiles/advancedrps.js"></script>
+</html>

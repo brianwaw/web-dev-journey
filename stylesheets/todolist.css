@@ -1,0 +1,41 @@
+body{
+    margin:20px;
+    background-color: rgb(215, 222, 228);
+}
+
+.grid-container{
+
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    max-width: 900px;
+    margin:40px auto;
+    align-items: center;
+    justify-items: left;
+    
+}
+button{
+    height:30px;
+    width:100px;
+    background-color:rgb(215, 222, 228);
+    border-radius: 8px;
+    border:none;
+}
+.add-btn{
+    background-color: green;
+}
+
+.delete-btn{
+    background-color:red;
+}
+header{
+    color: cornflowerblue;
+    max-width: 900px;
+    margin:40px auto;
+    border-bottom: solid 1px cornflowerblue
+}
+
+input{
+    background-color:rgb(215, 222, 228);
+    color: black;
+    border-radius: 4px;
+}

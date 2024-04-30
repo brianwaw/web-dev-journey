@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="../stylesheets/3-rockpaper.css">
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+    <img src="../images/fist.png" alt="Rock" onclick="
+       determine();
+       
+       if (message === 'the computer picked Rock' ){
+            result = ('its a tie');
+        }else if(message === 'the computer picked Scissors' ){
+            result = ('you win');
+        }else if(message === 'the computer picked Paper' ){
+            result = ('you lose');
+        }
+
+        endstats();
+        alert(`you picked Rock, computer picked ${message} ${result} Wins: ${stats.wins} losses: ${stats.losses} ties: ${stats.ties} `)
+       
+    " class="Rock">
+
+    <img src="../images/raised_hand_with_fingers_splayed.png" alt="Paper" onclick="
+           determine();
+       if (message === 'the computer picked Rock' ){
+           result = ('you win');
+        }else if(message === 'the computer picked Scissors' ){
+           result = ('you lose');
+        }else if(message === 'the computer picked Paper' ){
+            result = ('its a tie');
+        }
+        endstats();
+        alert(`you picked Paper, computer picked ${message} ${result} Wins: ${stats.wins} losses: ${stats.losses} ties: ${stats.ties} `)
+    ">
+
+    <img src="../images/v.png" alt="Scissors" onclick="
+            determine();
+       if (message === 'the computer picked Rock' ){
+            result = ('you lose');
+        }else if(message === 'the computer picked Scissors' ){
+            result = ('its a tie');
+        }else if(message === 'the computer picked Paper' ){
+            result = ('you win');
+        }
+        endstats();
+        alert(`you picked Scissors, computer picked ${message} ${result} Wins: ${stats.wins} losses: ${stats.losses} ties: ${stats.ties} `)
+    ">
+    <button onclick="
+        stats.wins = 0;
+        stats.losses=0;
+        stats.ties = 0;
+        alert(`the scores have been reset`);
+    ">Reset</button>
+
+</body>
+<script src="../javascriptfiles/3-rockpaper.js"></script>
+</html>
